@@ -17,15 +17,6 @@ const listingSchema = new Schema({
   price: Number,
   location: String,
   country: String,
-  pdf:{
-    type:Object,
-    properties: {
-      filename: String,
-      url: String,
-      contentType: String,
-      fileSize: Number
-    }
-  },
   reviews: [
     {
       type: Schema.Types.ObjectId,

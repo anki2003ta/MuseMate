@@ -140,6 +140,41 @@
   border: 2px solid goldenrod; /* increased border width to make it more visible */
   border-color: goldenrod; /* changed border color to a darker shade */
 }
+.quiz{
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: small;
+  margin-left:49.05rem ;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: rgb(241, 239, 235);
+  border-color: black;
+  justify-content: center;
+  position: relative;
+}
+.quiz ul.dropdown {
+  display: none; /* hide the dropdown by default */
+  position: absolute; /* position the dropdown absolutely */
+  top: 100%; /* position the dropdown below the .quiz div */
+  left: 0; /* align the dropdown with the left edge of the .quiz div */
+  background-color: #fff; /* add a background color to the dropdown */
+  border: 1px solid #fcf9f9; /* add a border to the dropdown */
+  padding: 10px; /* add some padding to the dropdown */
+}
+.quiz ul.dropdown li {
+  display: block; /* display the list items as blocks */
+  margin-bottom: 10px; /* add some margin between list items */
+}
+.quiz ul.dropdown li:last-child {
+  margin-bottom: 0; /* remove the margin from the last list item */
+}
+
+.quiz:hover ul.dropdown {
+  display: block; /* show the dropdown when the .quiz div is hovered */
+}
+
 
 </style>
 <body>
@@ -148,22 +183,32 @@
     <div id="filters">
       <div class="filter">
         <div><i class="fa-solid fa-temperature-arrow-up weather"></i></div>      
-        <a href="https://anki2003ta.github.io/PRODIGY_WD_05/Task-1/index1.html"><p>Real-Time<br>Weather</p></a>
-      </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-fire"></i></div>
-        <p>Trending</p>
-
+        <a href="https://anki2003ta.github.io/Weather/Task-1/index1.html"><p>Real-Time<br>Weather</p></a>
       </div>
       <div class="filter">
         <div><i class="fa-solid fa-money-check-dollar"></i></div>
         <a href="https://arpi2003ta.github.io/currency_converter/"><p>Currency<br>Converter</p></a>
 
       </div>
-      <div class="filter">
-        <div><i class="fa-solid fa-kit-medical"></i></div>
-        <p>Emergency</p>
-
+      
+      <div class="filter quiz ">
+        <div style="font-size: 20px;"><i class="fa-solid fa-rectangle-list"></i></div>
+        <p style="margin-bottom: -20px;font-size: 15px;"><a href="#">AR view</a>
+          <ul class="dropdown">
+            <li><a href="https://arpi2003ta.github.io/B5/">Coin</a></li>
+            <li><a href="https://arpi2003ta.github.io/B2/">Fish</a></li>
+            <li><a href="https://arpi2003ta.github.io/B4/">Bronze</a></li>
+            <li><a href="https://arpi2003ta.github.io/B1/">Democratic Art</a></li>
+            <li><a href="https://arpi2003ta.github.io/B3/">Gandhara</a></li>
+            <li><a href="#">Archaeology</a></li>
+            <li><a href="#">Bharhut</a></li>
+            <li><a href="#">Botany</a></li>
+            <li><a href="#">Bird</a></li>
+            <li><a href="#">Egyptian</a></li>
+            <li><a href="#">Insect</a></li>
+            <li><a href="#">Mannel</a></li>
+          </ul>
+        </p>
       </div>
   </div>
   <div class="photo_slider">
